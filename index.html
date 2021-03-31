@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Css/Style.css">
+</head>
+<body>
+    <section>
+        <img src="./Img/1con.jpg" data-speed="-5" class="layer">
+        <img src="./Img/2.png" data-speed="5" class="layer">
+        <img src="./Img/3.png" data-speed="2" class="layer">
+        <img src="./Img/4.png" data-speed="6" class="layer">
+        <img src="./Img/5.png" data-speed="8" class="layer">
+
+        <h2 class="layer">Parallax</h2>
+    </section>
+    <script type="text/javascript">
+        document.addEventListener("mousemove",parallax);
+        function parallax(e){
+            this.querySelectorAll('.layer').forEach(layer=>{
+                const speed = layer.getAttribute('data-speed') 
+                const x = (window.innerWidth - e.pageX*speed)/90
+                const y = (window.innerHeight - e.pageY*speed)/90
+                layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
+            });
+        }
+
+    </script>
+</body>
+</html>
