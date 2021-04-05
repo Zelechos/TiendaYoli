@@ -69,44 +69,40 @@ main{
     object-fit: cover;
 }
 
+[class^="img"]{
+    position: absolute;
+}
 
 .img1{
-    position: absolute;
     margin-bottom: 0vh;
     margin-left: 100vh;
 }
 
 .img2{
-    position: absolute;
     margin-bottom: 75vh;
     margin-right: 90%;
 }
 
 .img3{
-    position: absolute;
     margin-bottom: 85vh;
     margin-right: 100vh;
 }
 
 .img4{
-    position: absolute;
     margin-bottom: 90vh;
 }
 
 .img5{
-    position: absolute;
     margin-bottom: 70vh;
     margin-left: 100vh;
 }
 
 .img6{
-    position: absolute;
     margin-bottom: 10vh;
     margin-right: 150vh;
 }
 
 .img7{
-    position: absolute;
     margin-right: 190vh;
     margin-top: 40vh;
 }
