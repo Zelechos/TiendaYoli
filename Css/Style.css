@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Sacramento&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -167,9 +167,15 @@ section{
     text-decoration: none;
     color: #fff;
     background-color: #F9C4C4;
-    padding: 7px 20px 9px;
+    padding: 7px 1px 9px;
     border: 1px solid #fff;
     border-radius: 5px;
+    width: 250px;
+    margin: auto;
+}
+
+.beauty{
+    font-family: 'Dancing Script', cursive;
 }
 
 .products{
@@ -202,9 +208,8 @@ section{
 }
 
 .products h2{
-    font-size: 90px;
+    font-size: 100px;
     color: #20002c;
-    font-family: 'Zilla Slab Highlight', cursive;
 }
 
 .products h4{
@@ -215,10 +220,9 @@ section{
 
 .products a{
     display: block;
-    width: 50%;
     margin: auto;
+    width: 250px;
 }
-
 
 .products .content{
     position: relative;
@@ -263,7 +267,9 @@ section{
 
 }
 
-
+.products .content .card .contentcard a{
+    margin: auto;
+}
 .products .content .card .button{
     text-decoration: none;
     color: #fff;
@@ -288,6 +294,7 @@ section{
 .products .content .card .contentcard h3{
     font-size: 25px;
     color: #F9C4C4;
+    font-family: 'Dancing Script', cursive;
 }
 .products .content .card .contentcard p{
     margin-bottom: 15px;
@@ -382,7 +389,8 @@ section{
     }
 
     .products h2 {
-        font-size: 2em;
+        font-size: 2.1em;
+        padding: 0;
     }
     
     .products h4 {
@@ -391,6 +399,7 @@ section{
     
     .products a {
         font-size: 1em;
+        width: 150px;
     }
 
     .footer .sci li a img {
@@ -406,12 +415,11 @@ section{
         position: fixed;
         right: 80px;
         bottom: 15px;
-        width : 10px;
+        width : 3px;
         z-index : 1000;
     }
 
-    
-    /*sonbrero*/
+    /*Ocultamos las prendas*/
     .img2 ,.img3,.img4,.img5,.img6,.img7,.img8,.img9,.img10{
         display: none;
     }
