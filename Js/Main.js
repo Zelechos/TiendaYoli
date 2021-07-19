@@ -10,3 +10,15 @@ function parallax(Evento){
     layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
     });
 }
+
+
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('ul').toggleClass('active');
+    })
+
+    $('.logo').click(function(){
+        $('ul').toggleClass('active');
+    })
+
+})
