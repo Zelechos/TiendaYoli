@@ -3,22 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <title>Tienda Yoli😍🥰😘</title>
     <link rel="stylesheet" href="./Css/Style.css">
-    <script src="./Js/Main.js"  ></script>
     <link rel="shortcut icon" href="./assets/img/vestido-rojo.webp" type="image/x-icon">
+    <!-- Traemos jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="./Js/Main.js"  ></script>
 </head>
 <body>
+
     <!--Cabezera-->
     <section class="header">       
-        <a href="./index.html" class="logo"><h2>Yoli Tienda</h2></a>
         
-        <div class="toggle">
-            <a href="https://github.com/Zelechos" target="_blank">
-                <img src="./assets/img/github.webp" alt="Imagen del el Logo de Github." >
+        <!-- Barra de navegacion -->
+        <nav>
+
+            <a href="./index.html" class="siz">Yoli Tienda</a>
+            <a class="toggle">
+                <img src="./assets/img/menu.webp" alt="Imagen del el Logo de Github." >
             </a>
-        </div>
+
+            <ul class="navigation">
+                <li>
+                    <a href="#banner" class="logo" ><h3>Inicio</h3></a>
+                </li>
+                <li>
+                    <a href="#products" class="logo"><h3>Productos</h3></a>
+                </li>
+                <li>
+                    <a href="#links" class="logo"><h3>Informacion</h3></a>
+                </li>
+            </ul>
+        </nav>
+        
+
+
+
 
         <!--Imagenes Movibles-->
         <div class="img1">
@@ -60,7 +81,7 @@
     </section>
     <!--Principal-->
 
-    <section class="banner">
+    <section class="banner" id="banner">
         <img src="./assets/img/fondo.webp" class="fitBg" alt="Imagen de fondo">
         <div class="content">
             <h1>Yoli Tienda</h1>
@@ -71,7 +92,7 @@
     </section>
 
     <!--Productos-->
-    <section class="products">
+    <section class="products" id="products">
         <h2 class="beauty">Que Deseas Comprar?🤩</h2>
         <h4>😍Hermosas Chompas de Hilo para Mujer en Sucre Bolivia🤩</h4>
         <a href="https://api.whatsapp.com/send?phone=59174435066&text=Hola Yoli,%20estoy%20interesada%20en%20las%20Chompas%20de%20Hilo" target="_blank" class="button">Contactame</a><br>
@@ -84,7 +105,7 @@
                     <img src="./assets/img/card-1.webp" alt="Imagen Chompa de Hilo Siete Perlas">
                 </div>
                 <div class="contentcard">
-                    <h3> 🤩 Chompa de Hilo Siete Perlas</h3>
+                    <h3> 🤩Chompa de Hilo Siete Perlas</h3>
                     <p>
                         <i>Precio : 85 Bs</i>  <br>
                         <i>Estado : Nuevo</i>  <br>

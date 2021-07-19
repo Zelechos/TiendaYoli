@@ -13,6 +13,56 @@ section{
     padding: 40px;
 }
 
+nav{
+    padding: 0 100px;
+    width: 94%;
+    height: 45px;
+    box-sizing:border-box;
+    background:rgba(80, 6, 90, 0.6);
+    box-shadow:0 5px 15px rgba(0, 0, 0,.3);
+    transition: .5s;
+    border-radius: 9px;
+    z-index: 1000000;
+    position:fixed;
+    top: 5px;
+}
+
+.navigation{
+    display: block;
+    position:relative;
+    margin:0;
+    padding:0;
+    display: flex;
+    transition: .5s;
+    left: 800px;
+}
+
+.navigation li{
+    list-style: none;
+}
+
+.navigation li a{
+    display:block;
+    padding: 10px 20px;
+    margin-top: -40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
+    transition: .5s;
+}
+
+.navigation li a h3{
+    font-size: 1em;
+}
+
+.navigation li a:hover{
+    background-color:#F9C4C4;
+    color: #20002c !important;
+    border-radius: 10px;
+    size: 1.5em;
+}
+
+
 .header{
     position: absolute;
     top: 0;
@@ -26,14 +76,26 @@ section{
     font-family: 'Zilla Slab Highlight', cursive;
 }
 
+.siz{
+    font-size: 2.1em;
+    color:#fff;
+}
+
 .header .logo{
     color:#fff;
     text-decoration: none;
-    font-size: 1em;
+    font-size: 1.2em;
+}
+
+.toggle{
+    display: none;
+    position: absolute;
+    right: 40px;
+    bottom: 2px;
 }
 
 .header .toggle img{
-    max-width: 40px;
+    max-width: 35px;
     cursor: pointer;
     filter: invert(1);
 }
@@ -439,6 +501,58 @@ section{
         margin-top: 50px;
         margin-left: 15px;
     }
+
+
+    nav{
+        padding: 0 10px;
+        width: 89%;
+        height: 35px;
+        left: 20px;
+    }    
+
+    .navigation{
+        width:100%;
+        top: 5px;
+        left: 1px;
+        display: none;
+    }
+
+    .navigation.active{
+        display: block;
+    }
+
+    /* .navigation.desactive{
+        display: none;
+    } */
+
+
+    .navigation li a{
+        margin: 0;
+        display: block;
+        text-align: center;
+        background-color: rgba(37, 21, 33, 0.3);
+        border-radius: 7px;
+    }
+    
+    .navigation li a h3{
+        font-size: 17px;
+    }
+
+    .siz{
+        font-size: 1.7em ;
+    }
+    
+    .toggle{
+        display: block;
+        position: absolute;
+        right: 15px;
+        bottom: -2px;
+    }
+
+    .header .toggle img{
+        max-width: 30px;
+    }
+    
 }
 
 
