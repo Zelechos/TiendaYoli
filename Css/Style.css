@@ -76,7 +76,7 @@ nav{
     font-family: 'Zilla Slab Highlight', cursive;
 }
 
-.lweb{
+.logo_principal{
     font-size: 2.2em;
     color:#fff;
 }
@@ -352,6 +352,7 @@ nav{
     color: #F9C4C4;
     font-family: 'Dancing Script', cursive;
 }
+
 .products .content .card .contentcard p{
     margin-bottom: 15px;
 }
@@ -533,7 +534,7 @@ nav{
         font-size: 17px;
     }
 
-    .lweb{
+    .logo_principal{
         font-size: 1.75em ;
     }
     
