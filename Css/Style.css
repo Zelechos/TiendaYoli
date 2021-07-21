@@ -76,8 +76,8 @@ nav{
     font-family: 'Zilla Slab Highlight', cursive;
 }
 
-.siz{
-    font-size: 2.1em;
+.lweb{
+    font-size: 2.2em;
     color:#fff;
 }
 
@@ -91,13 +91,13 @@ nav{
     display: none;
     position: absolute;
     right: 40px;
-    bottom: 2px;
+    background-color: azure;
+    border-radius: 2px;
 }
 
 .header .toggle img{
     max-width: 35px;
     cursor: pointer;
-    filter: invert(1);
 }
 
 .banner{
@@ -521,11 +521,6 @@ nav{
         display: block;
     }
 
-    /* .navigation.desactive{
-        display: none;
-    } */
-
-
     .navigation li a{
         margin: 0;
         display: block;
@@ -538,15 +533,16 @@ nav{
         font-size: 17px;
     }
 
-    .siz{
-        font-size: 1.7em ;
+    .lweb{
+        font-size: 1.75em ;
     }
     
+
     .toggle{
         display: block;
         position: absolute;
         right: 15px;
-        bottom: -2px;
+        bottom: 2px;
     }
 
     .header .toggle img{

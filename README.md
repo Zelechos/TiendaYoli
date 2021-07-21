@@ -9,4 +9,4 @@
  - HTML testeado y links todos direccionados a la redes sociales del cliente
  - Javascript para animaciones y otra funcionalidades
  - Imagenes al pedido del cliente.
-[Pagina Web](https://zelechos.github.io/Web_Tienda/)
+<br>[Pagina Web](https://zelechos.github.io/Web_Tienda/)
