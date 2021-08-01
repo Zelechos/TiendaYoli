@@ -1,5 +1,4 @@
 /* Importaciones */
-@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&family=Sacramento&family=Zilla+Slab+Highlight:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
 
@@ -29,6 +28,10 @@ nav{
     top: 5px;
 }
 
+a{
+    text-decoration: none;
+}
+
 .navigation{
     display: block;
     position:relative;
@@ -45,25 +48,26 @@ nav{
 
 .navigation li a{
     display:block;
-    padding: 10px 20px;
+    padding: 5px 25px;
     margin-top: -40px;
-    text-transform: uppercase;
-    text-decoration: none;
     font-weight: bold;
     transition: .5s;
 }
 
 .navigation li a h3{
-    font-size: 1em;
+    font-size: 1.6em;
 }
 
 .navigation li a:hover{
     background-color:#F9C4C4;
-    color: #20002c !important;
+    color: #20002c;
     border-radius: 10px;
-    size: 1.5em;
 }
 
+.header, .banner{
+    font-family: 'Dancing Script', cursive;
+    width: 100%;
+}
 
 .header{
     position: absolute;
@@ -72,29 +76,24 @@ nav{
     z-index: 1000000;
     display: flex;
     justify-content: space-between;
-    width: 100%;
     padding-top: 20px;
     padding-bottom: 20px;
-    font-family: 'Zilla Slab Highlight', cursive;
 }
 
 .logo_principal{
     font-size: 2.2em;
-    color:#fff;
 }
 
-.header .logo{
-    color:#fff;
-    text-decoration: none;
-    font-size: 1.2em;
+.header .logo , .logo_principal{
+    color:#F9C4C4;
 }
 
 .toggle{
     display: none;
     position: absolute;
     right: 40px;
-    background-color: azure;
-    border-radius: 2px;
+    background-color: #F9C4C4;
+    border-radius: 5px;
 }
 
 .header .toggle img{
@@ -104,12 +103,10 @@ nav{
 
 .banner{
     position: relative;
-    width: 100%;
     min-height: 110vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-family: 'Zilla Slab Highlight', cursive;
 }
 
 .banner:before{
@@ -123,7 +120,6 @@ nav{
     background: linear-gradient(to top,#20002c,transparent);
 }
 
-
 .banner .content{
     position: relative;
     max-width: 900px;
@@ -131,16 +127,22 @@ nav{
     z-index: 1;
 }
 
-
 .banner .content a{
     font-family: 'Raleway', sans-serif;
     display: block;
 }
 
 .banner .content h1{
-    color: #fff;
-    font-size: 8em;
+    background-color: #F9C4C4;
+    color: #20002c;
+    font-size: 10em;
     margin-bottom: 10px;
+    border-radius: 10px;
+}
+
+.banner .content h1:hover{
+    background:rgba(80, 6, 90, 0.7);
+    color: #F9C4C4;
 }
 
 .banner .content h2{
@@ -223,10 +225,10 @@ nav{
 
 .button{
     text-decoration: none;
-    color: #fff;
+    color: #20002c;
     background-color: #F9C4C4;
     padding: 7px 1px 9px;
-    border: 1px solid #fff;
+    border: 1px solid #20002c;
     border-radius: 5px;
     width: 250px;
     margin: auto;
@@ -242,8 +244,8 @@ nav{
     margin: auto;
     font-family: 'Raleway', sans-serif;
     background: #20002c;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #cbb4d4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #cbb4d4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: -webkit-linear-gradient(to right, #F9C4C4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #F9C4C4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
 }
 
@@ -297,17 +299,21 @@ nav{
     position: relative;
     max-width: 320px;
     height: 220px;
-    border: 1px solid #F9C4C4;
+    border: 2px solid #F9C4C4;
     border-radius: 5px;
     margin: 45px 17px;
     padding: 25px 7px;
     display: flex;
     flex-direction: column;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
+    background:rgba(80, 6, 90, 0.7);
 }
 
 .products .content .card:hover{
     height: 450px;
+    border: 7px solid #F9C4C4;
+    background-color: #20002c;
+    border-radius: 5px;
 }
 
 .products .content .card .imgBx{
@@ -322,7 +328,6 @@ nav{
 .products .content .card .imgBx img{
     max-width: 90%;
     border-radius: 4px;
-
 }
 
 .products .content .card .contentcard a{
@@ -330,10 +335,10 @@ nav{
 }
 .products .content .card .button{
     text-decoration: none;
-    color: #fff;
+    color: #20002c;
     background-color: #F9C4C4;
     padding: 7px 20px 9px;
-    border: 1px solid #fff;
+    border: 1px solid #20002c;
     border-radius: 5px;
     margin: 0;
 }
@@ -346,13 +351,16 @@ nav{
     color: #fff;
     visibility: hidden;
     opacity: 0;
-    transition: 0.3s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .products .content .card .contentcard h3{
     font-size: 25px;
     color: #F9C4C4;
+    background:rgba(80, 6, 90, 0.7);
+    border-radius: 7px;
     font-family: 'Dancing Script', cursive;
+    margin-bottom: 10px;
 }
 
 .products .content .card .contentcard p{
@@ -362,7 +370,7 @@ nav{
 .products .content .card:hover .contentcard{
     visibility: visible;
     opacity: 1;
-    transition-delay: 0.2s;
+    transition-delay: 0.1s;
 }
 
 .products .content .card:hover .imgBx img{
@@ -379,7 +387,7 @@ nav{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: rgb(72, 49, 155);;
+    background-color: #20002c;
     font-family: 'Raleway', sans-serif;
 }
 
@@ -472,10 +480,14 @@ nav{
 
     .appWhatsapp{
         position: fixed;
-        right: 80px;
+        right: 60px;
         bottom: 15px;
         width : 3px;
         z-index : 1000;
+    }
+
+    .appWhatsapp img{
+        width: 45px;
     }
 
     /*Ocultamos las prendas*/
@@ -528,12 +540,14 @@ nav{
         margin: 0;
         display: block;
         text-align: center;
-        background-color: rgba(37, 21, 33, 0.3);
+        background-color: rgba(251, 202, 239, 0.568);
         border-radius: 7px;
+        border: 1px solid #20002c;
     }
     
     .navigation li a h3{
-        font-size: 17px;
+        font-size: 20px;
+        color: #20002c;
     }
 
     .logo_principal{
@@ -545,11 +559,13 @@ nav{
         display: block;
         position: absolute;
         right: 15px;
-        bottom: 2px;
+        top: 0.05px;
+        bottom: 0px;
     }
 
     .header .toggle img{
         max-width: 30px;
+        margin-top: 3px;
     }
     
 }
