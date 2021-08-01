@@ -9,3 +9,7 @@
  - HTML testeado y links todos direccionados a la redes sociales del cliente
  - Javascript para animaciones y otra funcionalidades
  - Imagenes al pedido del cliente.
+
+# Ultima Version
+ -------------------------------------------------------------------------------------
+ [v1.0.6](https://github.com/Zelechos/Web_Tienda/releases/tag/v1.0.6)
