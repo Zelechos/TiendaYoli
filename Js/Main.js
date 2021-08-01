@@ -1,8 +1,9 @@
 'use strict'
 
 //Animacion parallax de la imagenes de las ropas 
-document.addEventListener("mousemove",parallax);
-function parallax(Evento){
+document.addEventListener("mousemove", Parallax);
+
+function Parallax(Evento){
     this.querySelectorAll('.layer').forEach(layer=>{
         const speed = layer.getAttribute('data-speed');
         const x = (window.innerWidth - Evento.pageX*speed)/85;
@@ -12,12 +13,12 @@ function parallax(Evento){
 }
 
 //Modulo utilizando jquery para el funcionamiento del toggle
-$(document).ready(function(){
-    $('.toggle').click(function(){
+$(document).ready(()=>{
+    $('.toggle').click(()=>{
         $('ul').toggleClass('active');
     });
 
-    $('.logo').click(function(){
+    $('.logo').click(()=>{
         $('ul').toggleClass('active');
     });
 });
