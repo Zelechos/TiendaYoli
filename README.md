@@ -1,7 +1,7 @@
 # Web_Tienda
 -------------------------------------------------------------------------------------
 ### Una Pagina Web Estática para vender Ropa de Mujer llamada Yoli Tienda para impulsar la comunicación con sus clientes y las ventas de sus productos propietaria Yolamda Isla Legua.
-# [Pagina Web](https://zelechos.github.io/Web_Tienda/)
+# [Pagina Web](https://zelechos.github.io/TiendaYoli/)
 -------------------------------------------------------------------------------------
  - Css con estilos basicos y resposivos
  - HTML testeado y links todos direccionados a la redes sociales del cliente
