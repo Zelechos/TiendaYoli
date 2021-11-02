@@ -246,7 +246,6 @@ a{
     background: #20002c;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right, #F9C4C4, #20002c);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #F9C4C4, #20002c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
 }
 
 .products .products-list {
